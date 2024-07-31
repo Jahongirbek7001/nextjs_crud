@@ -5,7 +5,7 @@ export default function Navbar() {
         <>
             <nav className=" flex justify-between items-center bg-slate-800 px-8 py-3">
                 <Link href={'/'} className=" text-white font-bold">GTCoding</Link>
-                <Link href={'/addTopic'} className=" bg-white p-2">Add Topic</Link>
+                <Link href={'/addTopic'} className=" bg-white p-2">Add Post</Link>
             </nav>
         </>
     )

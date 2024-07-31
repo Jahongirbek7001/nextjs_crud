@@ -1,16 +1,19 @@
 import mongoose, { Schema } from "mongoose";
 
 
-const topicSchema = new Schema(
+const postSchema = new Schema(
   {
+    user: String,
     title: String,
     description: String,
+    likes: Number, 
+    views: Number,
   },
   {
     timestamps: true,
   }
 );
 
-const Topic = mongoose.models.Topic || mongoose.model("Topic", topicSchema);
+const Post = mongoose.models.Post || mongoose.model("Post", postSchema);
 
-export default Topic;
+export default Post;
